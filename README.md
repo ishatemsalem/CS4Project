@@ -10,7 +10,7 @@ Milestones 1 & 2:
 - Discord
   
 Milestone 3:
-- Blender 4.6 LTS + "SS Vantage Suite: Sprite Sheet" ;]
+- Blender 4.2 LTS + "SS Vantage Suite: Sprite Sheet" ;]
 - Krita Any version
 - Audacity Any version, strictly exporting to .wav
 - TexturePacker
