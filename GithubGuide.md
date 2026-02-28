@@ -1,5 +1,5 @@
-## Quick Github Guide for Team 203
-We're mainly using the [Github Desktop app](https://desktop.github.com/) 3ashan as-hal w it prevents us from accidentally uploading broken Eclipse files.
+## Quick github guide for Team 203
+were mainly using the [Github Desktop app](https://desktop.github.com/) 3ashan as-hal w it prevents us from accidently uploading broken eclipse files
 
 **Index:**
 1. [First-Time Setup](#1-first-time-setup)
@@ -12,57 +12,55 @@ We're mainly using the [Github Desktop app](https://desktop.github.com/) 3ashan 
 8. [Safe Sandbox (Branches)](#8-safe-sandbox-branches)
 
 ### 1. First-Time Setup
-- Nazzelo GitHub Desktop w e3melo login.
-- Go to `File > Clone repository...`
-- Click the **URL** tab and paste our link (e.g., `https://github.com/ishatemsalem/CSEN401-Team203.git`).
-- Choose your exact Eclipse workspace in the Local Path (like `C:\Users\ishatemsalem\eclipse-workspace\CSEN401-Team203`). Clone it.
-- To link it in Eclipse: `File > Import > General > Existing Projects into Workspace`, select the folder, Finish.
-
-  
+- nazzelo github desktop w e3melo login
+- go to `File > Clone repository...`
+- click the **URL** tab and paste our link (e.g., `https://github.com/ishatemsalem/CSEN401-Team203.git`)
+- choose ur exact eclipse workspace in the local path (like `C:\Users\ishatemsalem\eclipse-workspace\CSEN401-Team203`). clone it
+- to link it in eclipse: `File > Import > General > Existing Projects into Workspace`, select the folder, hit finish
 - CRITICAL: Ensure JDK 21: In Eclipse, go to Window > Preferences > Java > Installed JREs. Law JDK 21 msh mawgoud, click Add > Standard VM > Directory w dawwar 3ala el folder beta3 JDK 21. Check the box gambo 3ashan yeb2a el default.
 - Bardo double-check Window > Preferences > Java > Compiler w et2akked en el "Compiler compliance level" is set to 21.
 
 ### 2. The Daily Start (Pulling)
-Awal ma tefta7 el PC te3mel keda. **Never write code without checking this first.**
-- Open GitHub Desktop and click **Fetch origin** on top.
-- Law 7ad mel team rafa3 code gded, it changes to **Pull origin**. Click it.
-- **CRITICAL:** Open Eclipse, click our project folder, w edghat **F5** (Refresh). Law neseit, Eclipse will literally overwrite their new code with your cached files
+awal ma tefta7 el PC te3mel keda. **never write code without checking this first**
+- open github desktop and click **Fetch origin** on top
+- law 7ad mel team rafa3 code gded it changes to **Pull origin**. click it
+- **CRITICAL:** open eclipse, click our project folder w edghat **F5** (Refresh). law neseit eclipse will literally overwrite their new code with ur cached files
 
 ### 3. The Daily Finish (Saving)
-khalast shoghl? time to save.
-- Look at the **Changes** panel on the left in the app. Green = added lines, Red = deleted.
-- Check the boxes for the files you actually finished (masalan `Dasher.java`). Uncheck any half-baked stuff.
-- Ekteb summary wade7 in the bottom left (like *"Implemented Dasher momentum"*).
-- Click **Commit to main**, then **Push origin** at the top. Your unfinished stuff stays safe locally on your PC for tomorrow.
+khalast shoghl? time to save
+- look at the **Changes** panel on the left in the app. green = added lines, red = deleted
+- check the boxes for the files u actually finished (masalan `Dasher.java`). uncheck any half baked stuff
+- ekteb summary wade7 in the bottom left (like *"implemented Dasher momentum"*)
+- click **Commit to main** then **Push origin** at the top. ur unfinished stuff stays safe locally on ur PC for tmrw
 
 ### 4. Merge Conflicts
-Law enta w 7ad tany edited the exact same file at the same time. App will yell at you: "Resolve conflicts before merging."
-- Open Eclipse, hit **F5**.
-- Open the broken file (`Board.java`). Hatla2y weird symbols malhash lazma `<<<<<<< HEAD` w `=======`.
-- Manually delete the symbols w zabbat el code sa7 for Milestone 1 requirements.
-- Save, go back to GitHub Desktop, hit **Continue Merge**, and push.
+law enta w 7ad tany edited the exact same file at the same time app will yell at u: "resolve conflicts before merging"
+- open eclipse, hit **F5**
+- open the broken file (`Board.java`). hatla2y weird symbols malhash lazma like `<<<<<<< HEAD` w `=======`
+- manually delete the symbols w zabbat el code sa7 for milestone 1 requirements
+- save, go back to github desktop hit **Continue Merge** and push
 
 ### 5. Emergency Abort
-Law 3akeit el denya w want to go back to the last working server version.
-- Make sure you haven't clicked "Commit".
-- Open terminal/CMD w edkhol 3ala the project folder: `cd C:\Users\YourName\eclipse-workspace\CSEN401-Team203`
-- Ekteb `git restore .` (This absolute command wipes all uncommitted local changes).
-- Eclipse -> F5. Everything is clean again.
+law 3akeit el denya w want to go back to the last working server version
+- make sure u havent clicked commit
+- open terminal/CMD w edkhol 3ala the project folder: `cd C:\Users\YourName\eclipse-workspace\CSEN401-Team203`
+- ekteb `git restore .` (this absolute command wipes all uncommitted local changes)
+- eclipse -> f5. everything is clean again
 
 ### 6. Interrupted Save (Stashing)
-You're halfway through writing code, bas someone pushed an urgent update.
-- Click **Pull origin**. The app will ask what to do with your unfinished files.
-- Choose **"Stash my changes and continue."**
-- Github hides your code in a vault, downloads the team's update, then you click **View Stashed Changes > Restore** (bottom left) to drop your unfinished code back on top.
+ur halfway through writing code bas someone pushed an urgent update
+- click **Pull origin**. the app will ask what to do with ur unfinished files
+- choose **"Stash my changes and continue."**
+- github hides ur code in a vault, downloads the teams update then u click **View Stashed Changes > Restore** (bottom left) to drop ur unfinished code back on top
 
 ### 7. Rollback a Bug
-Pushed a bug that broke the game for everyone?
-- Go to the **History** tab in GitHub Desktop.
-- Right-click your bad commit w ekhter **Revert commit**.
-- It does the mathematical opposite of your mistake (deletes what you added, adds what you deleted). Hit **Push origin** to send the fix.
+pushed a bug that broke the game for everyone?
+- go to the **History** tab in github desktop
+- right click ur bad commit w ekhter **Revert commit**
+- it does the mathematical opposite of ur mistake (deletes what u added, adds what u deleted). hit **Push origin** to send the fix
 
 ### 8. Safe Sandbox (Branches)
-Want to test a crazy feature bas kheyef it crashes `main`?
-- Click **Current Branch: main** at the top center -> **New Branch**. Name it something descriptive (e.g., `dataloader-test`).
-- Publish branch. Enta keda in a parallel universe. A3mel el enta 3aizo.
-- When it's 100% bug-free, click **Create Pull Request** to safely merge it into our main game.
+want to test a crazy feature bas kheyef it crashes `main`?
+- click **Current Branch: main** at the top center -> **New Branch**. name it something descriptive (like `dataloader-test`)
+- publish branch. enta keda in a parallel universe, a3mel el enta 3aizo
+- when its 100% bug free click **Create Pull Request** to safely merge it into our main game
