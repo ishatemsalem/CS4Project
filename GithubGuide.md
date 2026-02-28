@@ -60,7 +60,7 @@ pushed a bug that broke the game for everyone?
 - it does the mathematical opposite of ur mistake (deletes what u added, adds what u deleted). hit **Push origin** to send the fix
 
 ### 8. Safe Sandbox (Branches)
-want to test a crazy feature bas kheyef it crashes `main`?
+want to test a feature bas khayef it crashes `main`?
 - click **Current Branch: main** at the top center -> **New Branch**. name it something descriptive (like `dataloader-test`)
 - publish branch. enta keda in a parallel universe, a3mel el enta 3aizo
-- when its 100% bug free click **Create Pull Request** to safely merge it into our main game
+- when its 100% bug free click **Create Pull Request** and tell me and i'll merge it into our main game
