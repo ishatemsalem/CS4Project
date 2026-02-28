@@ -1,4 +1,4 @@
-# زميلاتي في Team 203! علشان نكون كلنا في نفس الصفحة، اليكم التوجيهات القياسية
+# زملائي في Team 203! علشان نكون كلنا في نفس الصفحة، اليكم التوجيهات القياسية
 - No external libraries are allowed. Akherna java.* (dw tho its still possible to make mindblowing UI for milestone 3)
 - AI is allowed, but all chats must be saved and submitted in a Team203logs.zip. If AI is detected for a part and no logs are present severe deductions will be done. fa dont delete anything and dont say anything you wouldnt want them to see
 
