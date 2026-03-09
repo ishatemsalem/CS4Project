@@ -19,6 +19,8 @@ import game.engine.monsters.Dynamo;
 import game.engine.monsters.Monster;
 import game.engine.monsters.MultiTasker;
 import game.engine.monsters.Schemer;
+import game.engine.Role;
+import game.engine.cards.Card;
 
 public class DataLoader {
     private static final String CARDS_FILE_NAME = "cards.csv";
@@ -92,13 +94,13 @@ public class DataLoader {
 
             else if(data.length == 2){
 
-                String effect = data[1];
+                int effect = Integer.parseInt(data[1]);
 
-                if(effect.equalsIgnoreCase("positive"))
-                    cells.add(new ConveyorBelt(name));
+                if(effect>0)
+                    cells.add(new ConveyorBelt(name,effect));
 
                 else
-                    cells.add(new ContaminationSock(name));
+                    cells.add(new ContaminationSock(name,effect));
             }
         }
 
