@@ -31,7 +31,41 @@ The src directory must contain only the following exact packages:
 - game.engine.interfaces
 - game.tests
 
-OOP guidelines:
+### Responsibilities:
+
+purple (Ja):
+- enums
+- constants classes
+- game class (under game setup)
+- exceptions class (all subclasses: InvalidMoveException
+                                    InvalidTurnException
+                                    OutofEnergyException)
+
+green (Is):
+- CanisterModifier Interface
+- Card class (all subclasses: SwapperCard
+                              EnergyStealCard
+                              StartoverCard
+                              ConfusionCard
+                              Shieldcard)
+
+blue (Ju):
+- Monster class (all subclasses:  Dasher
+                                  Dynamo
+                                  Multitasker
+                                  Schemer)
+- DataLoader class (under game setup)
+
+red (Ro):
+- Cell class
+- doorcell
+- monstercell
+- cardcell
+- transportcell
+- ConveyorBelt
+- ContaminationSock
+
+### OOP guidelines:
 - All class instance variables must be explicitly declared as private.
 - Any attribute defined as a constant must be declared as public static final.
 - Accessors/mutators: Getters and setters must follow Java camelCase convention eg. getEnergy(). If instance var is boolean, getter must begin with "is" eg. isAlive()
