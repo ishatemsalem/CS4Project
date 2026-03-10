@@ -12,10 +12,10 @@ import java.util.Random;
 
 public class Game {
 
-	private Board board;
-    private ArrayList<Monster>allMonsters;
-    private Monster player;
-    private Monster opponent;
+	private final Board board;
+    private final ArrayList<Monster>allMonsters;
+    private final Monster player;
+    private final Monster opponent;
     private Monster current;
 
 	public Board getBoard() {
@@ -40,18 +40,18 @@ public class Game {
 		ArrayList<Card>c =DataLoader.readCards();
         board=new Board(c);
         allMonsters=DataLoader.readMonsters();
-        player=pickRandomMonster(playerRole);
+        player=selectRandomMonsterByRole(playerRole);
         Role opp;
         if (playerRole==Role.SCARER) {
             opp=Role.LAUGHER;
         } else {
             opp=Role.SCARER;
         }
-        opponent=pickRandomMonster(opp);
+        opponent=selectRandomMonsterByRole(opp);
         current=player;
 	
 	}
-	private Monster pickRandomMonster(Role role) {
+	private Monster selectRandomMonsterByRole(Role role) {
         
         ArrayList<Monster> list=new ArrayList<>();
         for (int i=0; i<allMonsters.size(); i++) {
