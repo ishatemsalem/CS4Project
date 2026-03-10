@@ -31,3 +31,4 @@ bin/
 # Extras
 .project
 .classpath
+/bin1/
