@@ -1,4 +1,5 @@
 package game.engine.monsters;
+import game.engine.Constants;
 import game.engine.Role;
 public abstract class Monster implements Comparable<Monster>{
       private String name;
@@ -55,10 +56,10 @@ public abstract class Monster implements Comparable<Monster>{
              this.role = role;
         }
         public void setEnergy(int energy) {
-             this.energy = energy;
+             this.energy = Math.max(0, energy);
         }
         public void setPosition(int position) {
-             this.position = position;
+             this.position = position%Constants.BOARD_SIZE;
         }
         public void setFrozen(boolean frozen) {
              this.frozen = frozen;
@@ -70,7 +71,6 @@ public abstract class Monster implements Comparable<Monster>{
              this.confusionTurns = confusionTurns;
         }
 
-        //sorts monsters by position with larger position first (closer to end)
         @Override
         public int compareTo(Monster o){
             return Integer.compare(this.position, o.position);
