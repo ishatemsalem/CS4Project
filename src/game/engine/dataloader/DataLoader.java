@@ -42,25 +42,25 @@ public class DataLoader {
 
             switch(type){
 
-            case "SwapperCard":
+            case "SWAPPERCARD":
                 cards.add(new SwapperCard(name, description, rarity));
                 break;
 
-            case "ShieldCard":
+            case "SHIELDCARD":
                 cards.add(new ShieldCard(name, description, rarity));
                 break;
 
-            case "EnergyStealCard":
+            case "ENERGYSTEALCARD":
                 int energy = Integer.parseInt(data[4]);
                 cards.add(new EnergyStealCard(name, description, rarity, energy));
                 break;
 
-            case "StartOverCard":
+            case "STARTOVERCARD":
                 boolean lucky = Boolean.parseBoolean(data[4]);
                 cards.add(new StartOverCard(name, description, rarity, lucky));
                 break;
 
-            case "ConfusionCard":
+            case "CONFUSIONCARD":
                 int duration = Integer.parseInt(data[4]);
                 cards.add(new ConfusionCard(name, description, rarity, duration));
                 break;
@@ -127,18 +127,18 @@ public class DataLoader {
 
             switch(type){
 
-                case "Dasher":
+                case "DASHER":
                     monsters.add(new Dasher(name, description, role, energy));
                     break;
 
-                case "Dynamo":
+                case "DYNAMO":
                     monsters.add(new Dynamo(name, description, role, energy));
                     break;
 
-                case "MultiTasker":
+                case "MULTITASKER":
                     monsters.add(new MultiTasker(name, description, role, energy));
                     break;
-                case "Schemer":
+                case "SCHEMER":
                     monsters.add(new Schemer(name, description, role, energy));
                     break;
             }
