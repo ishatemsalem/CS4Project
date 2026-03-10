@@ -1,7 +1,7 @@
 package game.engine;
 
 public final class Constants {
-	private Constants() {
+	public Constants() {
     }
     
     // Board
