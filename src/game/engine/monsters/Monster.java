@@ -22,6 +22,7 @@ public abstract class Monster implements Comparable<Monster>{
          this.frozen = false;
          this.shielded = false;
          this.confusionTurns = 0;
+         this.role = originalRole;
       }
       
       

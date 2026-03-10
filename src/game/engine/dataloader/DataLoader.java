@@ -42,25 +42,25 @@ public class DataLoader {
 
             switch(type){
 
-            case "SWAPPERCARD":
+            case "SWAPPER":
                 cards.add(new SwapperCard(name, description, rarity));
                 break;
 
-            case "SHIELDCARD":
+            case "SHIELD":
                 cards.add(new ShieldCard(name, description, rarity));
                 break;
 
-            case "ENERGYSTEALCARD":
+            case "ENERGYSTEAL":
                 int energy = Integer.parseInt(data[4]);
                 cards.add(new EnergyStealCard(name, description, rarity, energy));
                 break;
 
-            case "STARTOVERCARD":
+            case "STARTOVER":
                 boolean lucky = Boolean.parseBoolean(data[4]);
                 cards.add(new StartOverCard(name, description, rarity, lucky));
                 break;
 
-            case "CONFUSIONCARD":
+            case "CONFUSION":
                 int duration = Integer.parseInt(data[4]);
                 cards.add(new ConfusionCard(name, description, rarity, duration));
                 break;
