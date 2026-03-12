@@ -30,7 +30,7 @@ public class Board {
     }
 
     public static void setStationedMonsters(ArrayList<Monster> stationedMonsters) {
-        Board.stationedMonsters = stationedMonsters;
+        Board.stationedMonsters = new ArrayList<>(stationedMonsters);
     }
 
     public static ArrayList<Card> getOriginalCards() {
@@ -42,6 +42,6 @@ public class Board {
     }
 
     public static void setCards(ArrayList<Card> cards) {
-        Board.cards = cards;
+        Board.cards = new ArrayList<>(cards);
     }
 }
